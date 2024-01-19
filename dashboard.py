@@ -30,8 +30,8 @@ with st.sidebar:
         df = pd.read_excel(filename)
     else:
         #st.warning('Devi caricare un file', icon="⚠️")
-        os.chdir(r"C:\ElpolloLoco")
-        df = pd.read_excel("Db.xlsx")
+        #os.chdir(r"C:\ElpolloLoco")
+        df = pd.read_excel("Data/Db.xlsx")
 
 df["Anno"] = df["Data"].dt.year
 df["Mese"] = df["Data"].dt.month
