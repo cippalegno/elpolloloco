@@ -17,8 +17,8 @@ st.title(":chicken: Dashboard")
 st.sidebar.image("polloloco.png", use_column_width=True)
 
 # load CSS Style
-with open('styles.css')as f:
-    st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html = True)
+#with open('styles.css')as f:
+#    st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html = True)
 
 
 with st.sidebar:
