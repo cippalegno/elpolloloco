@@ -140,7 +140,7 @@ with Tab_uscite:
                 st.write(new_data)
                 df = pd.concat([df, new_data])
                 st.write(df)
-                writer = pd.ExcelWriter('test.xlsx')
+                writer = pd.ExcelWriter('Data/Db.xlsx')
                 df.to_excel(writer, sheet_name="foglio1", index= False)
                 writer.close()
 
@@ -172,7 +172,7 @@ with Tab_entrate:
                 st.write(new_data)
                 df = pd.concat([df, new_data])
                 st.write(df)
-                writer = pd.ExcelWriter('test.xlsx')
+                writer = pd.ExcelWriter('Data/Db.xlsx')
                 df.to_excel(writer, sheet_name="foglio1", index= False)
                 writer.close()
 
